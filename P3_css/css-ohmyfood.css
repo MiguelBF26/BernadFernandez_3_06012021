@@ -1,0 +1,45 @@
+@media screen and (max-width: 375px)
+{
+    @font-face
+    {
+        font-family: 'Roboto';
+        src: url(Police/Roboto/Roboto-Regular.ttf),
+            url(Police/Roboto/Roboto-Medium.ttf),
+    }
+    body
+    {
+        margin: 0;
+        font-family: 'Roboto';
+    }
+    a
+    {
+        text-decoration: none;
+        color: black;
+    }
+    /*Tête de page*/
+    #menu
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 10px;
+    }
+    .retour
+    {
+        font-size: 60%;
+    }
+    .logo-principal
+    {
+        display: flex;
+        font-size: 23px;
+    }
+    /*Photo du plat*/
+    .imgBack
+    {
+        display: flex;
+        object-fit: contain;
+        width: 375px;
+        height: 300px;
+    }
+
+}
