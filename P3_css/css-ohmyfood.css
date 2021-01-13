@@ -1,4 +1,4 @@
-@media screen and (max-width: 375px)
+@media screen and (max-width: 414px)
 {
     @font-face
     {
@@ -24,11 +24,11 @@
         justify-content: space-around;
         margin: 10px;
     }
-    .retour
+    #retour
     {
-        font-size: 60%;
+        font-size: 50%;
     }
-    .logo-principal
+    #logo-principal
     {
         display: flex;
         font-size: 23px;
