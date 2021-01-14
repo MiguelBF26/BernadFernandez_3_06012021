@@ -4,7 +4,7 @@
     {
         font-family: 'Roboto';
         src: url(Police/Roboto/Roboto-Regular.ttf),
-            url(Police/Roboto/Roboto-Medium.ttf),
+            url(Police/Roboto/Roboto-Medium.ttf);
     }
     body
     {
@@ -23,16 +23,53 @@
         flex-wrap: wrap;
         justify-content: space-around;
         margin: 10px;
+        border-bottom: 1px black solid;
+        box-shadow: 1px 0px 5px;
+    }
+    #logo-principal
+    {
+        display: flex;
+        font-size: 50%;
     }
     #retour
     {
         font-size: 50%;
     }
-    #logo-principal
+    /*Tête de page (accueil)*/
+    #lieu
+    {
+        text-align: center;
+        font-size: 90%;
+        background: darkgrey;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    #reservation h3
     {
         display: flex;
-        font-size: 23px;
+        justify-content: center;
+        text-align: center;
+        font-weight: bold;
+        font-size: 150%;
     }
+    #reservation p
+    {
+        text-align: center;
+        font-size: 110%;
+    }
+    .explorer
+    {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        color: white;
+        background-color: #9356DC;
+        border-radius: 10% 10% 10%;
+        font-size: 80%;
+        width: 40%;
+        padding: 3%;
+    }
+
     /*Photo du plat*/
     .imgBack
     {
