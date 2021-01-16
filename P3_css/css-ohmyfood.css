@@ -35,21 +35,28 @@
     {
         font-size: 50%;
     }
-    /*Tête de page (accueil)*/
+    /*Tête de page (accueil.)*/
     #lieu
     {
         text-align: center;
         font-size: 90%;
-        background: darkgrey;
+        background: #eaeaea;
         padding-top: 15px;
         padding-bottom: 15px;
+        margin:0;
+    }
+    #reservation 
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: #f6f6f6;
+        padding-top: 5%;
+        padding-bottom: 8%;
     }
     #reservation h3
     {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        font-weight: bold;
+        font-weight: 600;
         font-size: 150%;
     }
     #reservation p
@@ -64,12 +71,36 @@
         font-weight: bold;
         color: white;
         background-color: #9356DC;
-        border-radius: 10% 10% 10%;
+        border-radius: 30%;
         font-size: 80%;
         width: 40%;
-        padding: 3%;
+        height: 40px;
     }
 
+    #boutonFonction
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    #boutonFonction h2
+    {
+        font-weight: 600;
+        font-size: 160%;
+        margin-left: 5%;
+    }
+    .bouton
+    {
+        box-shadow: 1px 1px 10px;
+        background-color: #f6f6f6;
+        width: 70%;
+        height: 60%;
+        margin-bottom: 10px;
+    }
+    .bouton .fas
+    {
+        margin-right: 4%;
+        color: grey
+    }
     /*Photo du plat*/
     .imgBack
     {
