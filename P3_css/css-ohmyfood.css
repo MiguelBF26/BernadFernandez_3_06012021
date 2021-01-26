@@ -178,6 +178,13 @@ footer
     background-color: #353535;
     padding-top: 10px;
 }
+#ohMyFood
+{
+    font-family: "Shrikhand";
+    src: url(police/shrikhand/Shrikhand-Regular.otf);
+    color: white;
+    font-size: 15px;
+}
 footer ul 
 {
     text-align: none;
