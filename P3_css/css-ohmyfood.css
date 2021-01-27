@@ -5,6 +5,11 @@
     src: url(Police/Roboto/Roboto-Regular.ttf),
      url(Police/Roboto/Roboto-Medium.ttf);
 }
+@font-face
+{
+    font-family: "Shrikhand";
+    src: url(police/shrikhand/Shrikhand-Regular.otf);
+}
 body
 {
 margin: 0;
@@ -169,24 +174,88 @@ a
     margin-top: 1px;
     margin-left: 10px;
 }
+/*les Likes dans les menu*/
+.like
+{
+    display: flex;
+    float: right;
+    margin-bottom: 10px;
+}
+.like :active
+{
+    background-color: #9356DC;
+}
+.like :focus
+{
+    background-color: #9356DC;
+}
+/*Tête de page des menu*/
+#menu
+{
+    display: flex;
+    justify-content:space-between;
+}
+.retour
+{
+
+}
+.imgBack
+{
+    display: flex;    
+    object-fit: cover;
+    width: 375px;
+    height: 150px;
+}
+/*la section des menu*/
+#auMenu
+{
+    
+}
+.nom-du-menu
+{
+    font-family: "Shrikhand";
+    font-size: 30px;
+    color: black;
+}
+#entrees , #plats , #desserts
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.entrees , .plats , .desserts
+{
+    text-align: left;
+    box-shadow: 1px 5px 15px lightgray;
+    border-radius: 20px;
+    width: 95%;
+    height: 80px;
+    margin:auto;
+    margin-bottom: 15px;
+}
 /*Bas de Page */
 footer
 {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: left;
     background-color: #353535;
     padding-top: 10px;
 }
 #ohMyFood
 {
-    font-family: "Shrikhand";
-    src: url(police/shrikhand/Shrikhand-Regular.otf);
+    font-family:'Shrikhand';
     color: white;
-    font-size: 15px;
+    font-size: 20px;
+    margin-left: 20px
 }
 footer ul 
 {
-    text-align: none;
+    list-style-type: none;
     color: white;
+}
+footer li
+{
+    margin-bottom: 10px;
+    margin-left: 20px;
 }
