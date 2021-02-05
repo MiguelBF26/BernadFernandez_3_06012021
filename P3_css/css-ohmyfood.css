@@ -282,6 +282,7 @@ a
 {
     display: none;
 }
+
 #b-Commander
 {
     display: flex;
@@ -311,7 +312,7 @@ footer a
 {
     color:white;
 }
-#ohMyFood
+#
 {
     font-family:'Shrikhand';
     color: white;
