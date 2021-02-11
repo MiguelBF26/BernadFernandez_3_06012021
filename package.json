@@ -1,0 +1,19 @@
+{
+  "name": "bernadfernandez_3_06012021",
+  "version": "1.0.0",
+  "description": "Création du site OhMyFood",
+  "main": "index.js",
+  "scripts": {
+    "saas":""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiguelBF26/BernadFernandez_3_06012021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MiguelBF26/BernadFernandez_3_06012021/issues"
+  },
+  "homepage": "https://github.com/MiguelBF26/BernadFernandez_3_06012021#readme"
+}
