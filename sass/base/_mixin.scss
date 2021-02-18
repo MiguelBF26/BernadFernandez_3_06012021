@@ -1,0 +1,23 @@
+@mixin button-shadow {
+    box-shadow: 1px 5px 15px lightgrey;    
+}
+
+@mixin flex-box {
+    display:flex;
+    justify-content: left;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+@mixin flex-box-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+@mixin margin-default {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 5px;    
+}

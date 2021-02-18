@@ -39,7 +39,6 @@ a
 }
 #logo-principal img
 {
-
     width: 40%;
     padding-bottom: 2%;
 }
@@ -255,7 +254,7 @@ a
     justify-content: left;
     flex-direction: column;
     flex-wrap: wrap;
-    box-shadow: 1px 5px 15px lightgray;
+    box-shadow: 1px 5px 15px lightgrey;
     border-radius: 20px;
     width: 95%;
     height: 80px;
