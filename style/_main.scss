@@ -1,0 +1,61 @@
+@import "./base/_variables";
+@import "./base/_base";
+@import "./base/_mixins";
+
+@import "./layout/_form";
+@import "./layout/_header";
+@import "./layout/_typography";
+
+#lieu{
+    text-align: center;
+    font-size: 90%;
+    background-color: $colour-header;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0;
+}
+#reservation{
+    @include flex-box-column;
+    background-color: $colour-primary;
+    padding-top: 5%;
+    padding-bottom: 8%;
+        &--h3{
+            font-weight: 600;
+            font-size: 150%;
+        }
+        &--p{
+            text-align: center;
+            font-size: 110%;
+        }
+}
+
+.explorer{
+    @include flex-box-button;
+    font-weight: bold;
+    color: $colour-button;
+    @include double-colour;
+    border-radius: 75px;
+    font-size:80%;
+    width: 150px;
+    height: 10px;
+}
+
+#boutonFonction{
+    @include flex-box-button;
+    margin-bottom: 50px;
+    &--fonction{
+        font-weight: 600;
+        font-size: 160%;
+        margin-left: 5%;
+    }
+    &--.bouton{
+        @include flex-box-column;
+        @include button-shadow;
+        border-radius: 15px;
+        width: 90%;
+        height: 30px;
+        padding: 10px;
+        margin-bottom: 10px;
+
+    }
+}

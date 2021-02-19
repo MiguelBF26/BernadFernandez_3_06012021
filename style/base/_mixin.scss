@@ -8,6 +8,11 @@
     flex-direction: column;
     flex-wrap: wrap;
 }
+@mixin flex-box-column {
+    display: flex;
+    flex-direction: column;
+    text-align: center;    
+}
 
 @mixin flex-box-button {
     display: flex;
@@ -20,4 +25,9 @@
     margin-left: 10px;
     margin-right: 20px;
     margin-bottom: 5px;    
+}
+
+@mixin double-colour($colour-purple:$colour-button-purple, $colour-pink:$colour-button-pink){
+    box-shadow: insert 1% 1% $colour-pink; 
+    background-color: $colour-purple;   
 }

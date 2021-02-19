@@ -1,10 +1,10 @@
 {
   "name": "bernadfernandez_3_06012021",
-  "version": "1.0.0",
+  "version": "4.2.1",
   "description": "Création du site OhMyFood",
   "main": "index.js",
   "scripts": {
-    "saas": "sass --watch ./sass/main.scss:/css/css-ohmyfood.css"
+    "saas": "sass --watch ./style/main.scss:./style/css/css-ohmyfood.css"
   },
   "repository": {
     "type": "git",
