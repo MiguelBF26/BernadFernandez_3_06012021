@@ -9,9 +9,10 @@
 #logo-principal{
     display: flex;
     justify-content: center;
-    &_img {
-        width: 40%;
+    img {
+        width: 50%;
         padding-bottom: 2%;
+        margin-top: 10px;
     }
 }
 
@@ -21,4 +22,65 @@
     justify-content: left;
     margin-left: 20px;
     font-size: 95%;
+}
+
+#lieu{
+    text-align: center;
+    font-size: 90%;
+    background-color: $colour-header;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0;
+}
+#reservation{
+    @include flex-box-column;
+    background-color: $colour-primary;
+    padding-top: 5%;
+    padding-bottom: 8%;
+        h1{
+            font-weight: bold;
+            font-size: 25px;
+        }
+        p{
+            text-align: center;
+            font-size: 18px;
+        }
+}
+
+.explorer{
+    @include flex-box-button;
+    font-weight: bold;
+    color: $colour-button;
+    @include double-colour;
+    border-radius: 75px;
+    font-size:90%;
+    width: 70%;
+    height: 40px;
+}
+
+#boutonFonction{
+    @include flex-box-column;
+    margin-bottom: 50px;
+    .fonction{
+        font-weight: 600;
+        font-size: 160%;
+        margin-left: 5%;
+    }
+    .bouton{
+        @include button-shadow;
+        border-radius: 15px;
+        width: 90%;
+        height: 30px;
+        padding: 10px;
+        margin-bottom: 10px;
+        
+    }
+    span{
+        text-align: center;
+        background-color: $colour-button-purple;
+        border-radius: 50px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+    }
 }

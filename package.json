@@ -4,7 +4,7 @@
   "description": "Création du site OhMyFood",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./style/main.scss:./style/css/css-ohmyfood.css"
+    "sass": "sass --watch ./style/_main.scss:./style/css/style.css"
   },
   "repository": {
     "type": "git",
