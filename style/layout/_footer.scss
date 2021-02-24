@@ -1,0 +1,22 @@
+footer{
+    @include flex-box;
+    background-color: $colour-footer ;
+    padding-top: 10px;
+    a{
+        color:white;
+    }
+    ul{
+        list-style-type: none;
+        color: white;
+    }
+    li{
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
+}
+#logo-footer{
+    font-family:'Shrikhand';
+    color: white;
+    font-size: 20px;
+    margin-left: 20px
+}

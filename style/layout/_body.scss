@@ -1,0 +1,55 @@
+#resto{
+    background-color: $colour-primary;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 50px;
+    h1{
+        font-size: 130%;
+        margin-left: 11px;
+    }
+}
+#restaurant{
+    @include flex-box-column;
+}
+.menu{
+    @include button-shadow;
+    border-radius: 15px;
+    width: 90%;
+    height: 200px;
+    margin: 10px;
+}
+.menu img{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    object-fit: cover;
+    width: 100%;
+    height: 140px;
+}
+.menu h2{
+    text-align: left;
+    font-size: 85%;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 2px;
+}
+.menu p{
+    text-align: left;
+    font-size: 85%;
+    margin-top: 1px;
+    margin-left: 10px;
+}
+.nouveau {
+    text-align: right;
+}
+.like{
+    display: flex;
+    float: right;
+    margin-bottom: 10px;
+}
+.like :active{
+    @include double-colour;
+}
+.like :focus{
+    @include double-colour;
+}
