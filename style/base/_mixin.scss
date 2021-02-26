@@ -6,11 +6,12 @@
     display:flex;
     justify-content: left;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 @mixin flex-box-column {
     display: flex;
     flex-direction: column;
-    text-align: center;    
+    justify-content: center;    
 }
 
 @mixin flex-box-button {

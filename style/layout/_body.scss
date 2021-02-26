@@ -53,3 +53,57 @@
 .like :focus{
     @include double-colour;
 }
+
+#auMenu{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+}
+.nom-du-menu{
+    font-family: "Shrikhand";
+    font-size: 30px;
+    color: black;
+}
+#entrees , #plats , #desserts{
+    @include flex-box-column;
+}
+.entrees , .plats , .desserts{
+    @include flex-box ;
+    @include button-shadow;
+    border-radius: 20px;
+    width: 95%;
+    height: 80px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+#auMenu h2{
+    font-weight: bold;
+    font-size: 18px;
+    @include margin-default;
+}
+#auMenu h3{
+    font-weight: bold;
+    font-size: 15px;
+    @include margin-default;
+}
+#auMenu p{
+    font-size: 12px;
+    @include margin-default;
+}
+
+#auMenu span{
+    font-weight: bold;
+    font-size: 15px;
+}
+#b-commander{
+    @include flex-box-button;
+    font-weight: bold;
+    color: $colour-button;
+    @include double-colour;
+    border-radius: 75px;
+    font-size:90%;
+    width: 70%;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
