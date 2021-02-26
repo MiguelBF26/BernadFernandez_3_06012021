@@ -103,7 +103,7 @@ h1, h2, h3 {
 #boutonFonction .bouton {
   box-shadow: 1px 5px 15px lightgrey;
   border-radius: 15px;
-  width: 90%;
+  width: 85%;
   height: 30px;
   padding: 10px;
   margin-bottom: 10px;
@@ -279,6 +279,7 @@ footer a {
 footer ul {
   list-style-type: none;
   color: white;
+  padding-left: 0;
 }
 footer li {
   margin-bottom: 10px;
