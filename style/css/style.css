@@ -194,6 +194,14 @@ h1, h2, h3 {
   width: 100%;
 }
 
+.imgBack img {
+  background-size: 100%;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  height: 250px;
+  object-fit: cover;
+}
+
 .nom-du-menu {
   font-family: "Shrikhand";
   font-size: 30px;
