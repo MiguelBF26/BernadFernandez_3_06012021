@@ -7,6 +7,10 @@
   src: url(Police/roboto/Roboto-Bold.ttf);
 }
 @font-face {
+  font-family: "Roboto-thin";
+  src: url(Police/roboto/Roboto-Thin.ttf);
+}
+@font-face {
   font-family: "Shrikhand";
   src: url(police/shrikhand/Shrikhand-Regular.otf);
 }
@@ -20,7 +24,11 @@ a {
   color: black;
 }
 
-h1, h2, h3 {
+h2 {
+  font-family: "Roboto-thin";
+}
+
+h1, h3 {
   font-family: "Roboto-bold";
 }
 
@@ -121,6 +129,23 @@ h1, h2, h3 {
   background-color: #f5edff;
 }
 
+#menu-bis {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#menu-bis .retour {
+  margin-left: 15px;
+  font-size: 15px;
+  color: gray;
+}
+#menu-bis #logo-principal {
+  margin-right: 50px;
+}
+
 #resto {
   background-color: #f6f6f6;
   padding-top: 20px;
@@ -196,16 +221,31 @@ h1, h2, h3 {
 
 .imgBack img {
   background-size: 100%;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
   height: 250px;
   object-fit: cover;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 50px;
+  border-radius: 40% 40% 0% 0%/30% 30% 10% 10;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .nom-du-menu {
   font-family: "Shrikhand";
   font-size: 30px;
   color: black;
+  margin-right: 70px;
+}
+
+.far.fa-heart {
+  font-size: 20px;
 }
 
 #entrees, #plats, #desserts {
@@ -228,12 +268,13 @@ h1, h2, h3 {
 }
 
 #auMenu h2 {
-  font-weight: bold;
+  border-bottom: #99E2D0 2px solid;
+  width: 10%;
   font-size: 18px;
   margin-top: 10px;
   margin-left: 10px;
   margin-right: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 18px;
 }
 
 #auMenu h3 {
@@ -250,7 +291,7 @@ h1, h2, h3 {
   margin-top: 10px;
   margin-left: 10px;
   margin-right: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 18px;
 }
 
 #auMenu span {

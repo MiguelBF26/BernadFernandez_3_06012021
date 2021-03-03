@@ -7,6 +7,10 @@
     src:url(Police/roboto/Roboto-Bold.ttf);
 }
 @font-face{
+    font-family: 'Roboto-thin';
+    src:url(Police/roboto/Roboto-Thin.ttf);
+}
+@font-face{
     font-family: 'Shrikhand';
     src: url(police/shrikhand/Shrikhand-Regular.otf);
 }
@@ -19,7 +23,9 @@ a{
     text-decoration: none;
     color: black;
 }
-h1 , h2 , h3 {
+h2 {
+    font-family: 'Roboto-thin';
+}
+h1 , h3{
     font-family: 'Roboto-bold';
-
 }

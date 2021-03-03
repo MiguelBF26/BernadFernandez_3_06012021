@@ -87,3 +87,19 @@
 .bouton.btn--voilet{
     background-color: $colour-btn-purple;
 }
+#menu-bis{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    .retour{
+        margin-left: 15px;
+        font-size: 15px;
+        color: gray;
+    }
+    #logo-principal{
+        margin-right: 50px;
+    }
+}
