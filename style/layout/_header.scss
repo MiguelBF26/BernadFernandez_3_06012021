@@ -34,11 +34,12 @@
 }
 #reservation{
     @include flex-box-column;
+    align-items: center;
     background-color: $colour-primary;
     padding-top: 5%;
     padding-bottom: 8%;
         h1{
-            font-weight: bold;
+            text-align: center;
             font-size: 25px;
         }
         p{
@@ -57,33 +58,43 @@
     width: 70%;
     height: 40px;
 }
-
+.fonction{
+    font-size: 25px;
+    margin-left: 10px;
+}
 #boutonFonction{
     @include flex-box-column;
+    align-items: center;
     margin-bottom: 50px;
-    .fonction{
-        font-weight: 600;
-        font-size: 160%;
-        margin-left: 5%;
-    }
     .bouton{
+        @include flex-box-text;
         @include button-shadow;
         border-radius: 15px;
+        margin: 0;
         width: 85%;
         height: 30px;
         padding: 10px;
         margin-bottom: 10px;
-        
     }
     span{
+        position: absolute;
+        left: 8px;
         text-align: center;
         background-color: $colour-button-purple;
-        border-radius: 50px;
-        padding: 5px;
-        width: 30px;
-        height: 30px;
+        color: $colour-primary;
+        font-size: 13px;
+        border-radius: 50%;
+        text-align: center;
+        padding-top: 3px;
+        width: 21px;
+        height: 20px;
+    }
+    .fas.fa-mobile-alt , .fas.fa-list-ul , .fas.fa-store{
+        text-align: center;
+        color:grey;
     }
 }
+
 .bouton.btn--voilet{
     background-color: $colour-btn-purple;
 }

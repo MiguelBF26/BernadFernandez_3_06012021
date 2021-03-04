@@ -71,12 +71,13 @@ h1, h3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-color: #f6f6f6;
   padding-top: 5%;
   padding-bottom: 8%;
 }
 #reservation h1 {
-  font-weight: bold;
+  text-align: center;
   font-size: 25px;
 }
 #reservation p {
@@ -97,32 +98,47 @@ h1, h3 {
   height: 40px;
 }
 
+.fonction {
+  font-size: 25px;
+  margin-left: 10px;
+}
+
 #boutonFonction {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-bottom: 50px;
 }
-#boutonFonction .fonction {
-  font-weight: 600;
-  font-size: 160%;
-  margin-left: 5%;
-}
 #boutonFonction .bouton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
   box-shadow: 1px 5px 15px lightgrey;
   border-radius: 15px;
+  margin: 0;
   width: 85%;
   height: 30px;
   padding: 10px;
   margin-bottom: 10px;
 }
 #boutonFonction span {
+  position: absolute;
+  left: 8px;
   text-align: center;
   background-color: #9356DC;
-  border-radius: 50px;
-  padding: 5px;
-  width: 30px;
-  height: 30px;
+  color: #f6f6f6;
+  font-size: 13px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 3px;
+  width: 21px;
+  height: 20px;
+}
+#boutonFonction .fas.fa-mobile-alt, #boutonFonction .fas.fa-list-ul, #boutonFonction .fas.fa-store {
+  text-align: center;
+  color: grey;
 }
 
 .bouton.btn--voilet {
@@ -152,7 +168,8 @@ h1, h3 {
   padding-left: 20px;
   padding-bottom: 50px;
 }
-#resto h1 {
+#resto h2 {
+  font-family: "Roboto-bold";
   font-size: 130%;
   margin-left: 11px;
 }
@@ -179,7 +196,7 @@ h1, h3 {
   height: 140px;
 }
 
-.menu h2 {
+.menu h3 {
   text-align: left;
   font-size: 85%;
   font-weight: bold;
@@ -196,21 +213,24 @@ h1, h3 {
 }
 
 .nouveau {
-  text-align: right;
+  position: absolute;
+  right: 40px;
+  margin-top: 10px;
+  padding: 3px;
+  width: 18%;
+  height: 18px;
+  background-color: #99E2D0;
+  color: darkgreen;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
 }
 
 .like {
   display: flex;
-  float: right;
-  margin-bottom: 10px;
-}
-
-.like :active {
-  background: linear-gradient(#FF79DA, #9356DC);
-}
-
-.like :focus {
-  background: linear-gradient(#FF79DA, #9356DC);
+  justify-content: right;
+  align-self: flex-end;
+  margin: 0;
 }
 
 #auMenu {
@@ -340,6 +360,15 @@ footer li {
   color: white;
   font-size: 20px;
   margin-left: 20px;
+}
+
+.like {
+  color: black;
+  transition: transform 450ms, background-color 300ms 150ms;
+}
+.like:hover {
+  transform: scale(1);
+  color: #FF79DA;
 }
 
 /*# sourceMappingURL=style.css.map */

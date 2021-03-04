@@ -11,7 +11,7 @@
 @mixin flex-box-column {
     display: flex;
     flex-direction: column;
-    justify-content: center;    
+    justify-content: center;  
 }
 
 @mixin flex-box-button {
@@ -19,7 +19,12 @@
     justify-content: center;
     align-items: center;    
 }
-
+@mixin flex-box-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
 @mixin margin-h2 {
     margin-top: 10px;
     margin-left: 10px;
