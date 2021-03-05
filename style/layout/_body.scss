@@ -73,16 +73,21 @@
 //*Section des Menu/
 
 .imgBack img{
-    background-size: 100%;
+    width: 100%;
     height: 250px;
     object-fit: cover;
 }
 .title{
     @include flex-box-text;
+    position: relative;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     width: 100%;
     height: 50px;
-    border-radius: 40% 40% 0% 0% / 30% 30% 10% 10;
-    margin-top: 20px;
+    background-color: white;
+    z-index: 100;
+    padding-top: 20px;
+    margin-top: -50px;
     margin-bottom: 50px;
 }
 .nom-du-menu{  

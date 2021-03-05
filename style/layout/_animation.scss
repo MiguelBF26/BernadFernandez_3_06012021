@@ -3,6 +3,6 @@
     transition: transform 450ms, background-color 300ms 150ms;
     &:hover{
         transform: scale(1);
-        @include double-colour;
+        outline-color: $colour-button-purple;
     }
 }
