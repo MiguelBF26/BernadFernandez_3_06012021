@@ -362,13 +362,13 @@ footer li {
   margin-left: 20px;
 }
 
-.like {
+.far.fa-heart {
   color: black;
   transition: transform 450ms, background-color 300ms 150ms;
 }
-.like:hover {
+.far.fa-heart:hover {
   transform: scale(1);
-  color: #FF79DA;
+  background: linear-gradient(#FF79DA, #9356DC);
 }
 
 /*# sourceMappingURL=style.css.map */

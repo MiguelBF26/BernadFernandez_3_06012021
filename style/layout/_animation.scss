@@ -1,8 +1,8 @@
-.like{
+.far.fa-heart{
     color: black;
     transition: transform 450ms, background-color 300ms 150ms;
     &:hover{
         transform: scale(1);
-        color: $colour-button-pink;
+        @include double-colour;
     }
 }
