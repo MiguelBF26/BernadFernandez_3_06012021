@@ -2,172 +2,165 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <link href="P3_css/icone/css/all.css" rel="stylesheet"><!--les icones-->
-        <link rel="stylesheet" href="css/css-ohmyfood.css"><!--le fichier css-->
-        <link rel="stylesheet" href="css/css-ohmyfood-responsive.css"/>
+        <link href="style/css/icone/css/all.css" rel="stylesheet"><!--les icones-->
+        <link rel="stylesheet" href="style/css/style.css"><!--le fichier css-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Media Queries-->
         <title>Menu - Le délice des sens</title>
     </head>
         <body>
-            <div id="bloc-page">
-                <!--Tête de page-->
-                <header id="menu bis">
-                    <div class="retour">
-                        <a href="accueil.html">
+            <div id="bloc-page"> 
+            <header id="menu-bis">  <!--Tête de page-->
+                <div class="retour">
+                    <a href="accueil.html">
                         <i class="fas fa-arrow-left"></i>
-                        </a>
+                    </a>
+                </div>
+                <div id="logo-principal">
+                    <img src="style/css/image/ohmyfood.png" alt="logo du site 'OhMyFood'">
+                </div>
+            </header>                
+            <section> <!--Le menu La note Enchantée-->
+                <div id="auMenu">
+                    <div class="imgBack">
+                        <img src="style/css/image/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
                     </div>
-                    <div id="logo-principal">
-                        <img src="P3_css/image/ohmyfood.png" alt="logo du site 'OhMyFood'">
-                    </div>
-                                                         
-                </header>
-                <!--Le menu La note Enchantée-->
-                <section>
-                    <div id="AuMenu">
-                        <div class="imgBack">
-                            <img src="P3_css/image/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
-                        </div>  
-                        <h1 class="nom-du-menu">La note Enchantée</h1>
+                    <div class="title">  
+                        <h1 class="nom-du-menu">Le délice des sens</h1>
                         <i class="far fa-heart"></i>
-                        <!--Entrées-->
-                        <div id="entrees">
-                            <h2>ENTRÉES</h2>
-                            <div class="entrees 1">
-                                <h3>Tartare de thon</h3>
-                                <p>Assaisonné au yuzu</p>
-                                <div class="prix right">
-                                    <span>25€</span>
-                                </div>
-                                <div class="check">
-                                    <i class="fas fa-check-circle"></i>
-                                </div>
+                    </div>                        
+                    <div id="entrees"> <!--Entrées-->
+                        <h2>ENTRÉES</h2>
+                        <div class="entrees">
+                            <h3>Tartare de thon</h3>
+                            <p>Assaisonné au yuzu</p>
+                            <div class="prix-right">
+                                <span>25€</span>
                             </div>
-                            <div class="entrees 2">
-                                <h3>Bouchée de homard croustillant</h3>
-                                <p>Et sa farandole de petit légumes</p>
-                                <div class="prix right">
-                                    <span>35€</span>
-                                </div>
-                                <div class="check">
-                                    <i class="fas fa-check-circle"></i>
-                                </div>
-                            </div>
-                            <div class="entrees 3">
-                                <h3>Velouté de cèpes</h3>
-                                <p>Aux Truffes</p>
-                                <div class="prix right">
-                                    <span>20€</span>
-                                </div>
-                                <div class="check">
-                                    <i class="fas fa-check-circle"></i>
-                                </div>
-                            </div>
-                        </div>        
-                                <!--Plats-->
-                        <div id="plats">
-                            <h2>PLATS</h2>
-                            <div class="plats 1">
-                                <h3>Poulet rôti aux herbes de Provence</h3>
-                                <p>Et sa crème de truffe</p>
-                                <div class="prix right">
-                                    <span>40€</span>
-                                </div>
-                                <div class="check">
-                                    <i class="fas fa-check-circle"></i>
-                                </div>
-                            </div>
-                            <div class="plats 2">
-                                <h3>Langouste rôtie</h3>
-                                <p>Et ses légumes de saison</p>
-                                <div class="prix right">
-                                    <span>35€</span>
-                                </div>  
-                                <div class="check">
-                                    <i class="fas fa-check-circle"></i>
-                                </div>
-                            </div>
-                            <div class="plats 3">
-                                <h3>Côte de Boeuf Angus</h3>
-                                <p>Et sa purée de panais</p>
-                                <div class="prix right">
-                                    <span>44€</span>
-                                </div>
-                                <div class="check">
-                                    <i class="fas fa-check-circle"></i>
-                                </div>
+                            <div class="check">
+                                <i class="fas fa-check-circle"></i>
                             </div>
                         </div>
-                                <!--Desserts-->
-                        <div id="desserts">
-                            <h2>DESSERTS</h2>
-                            <div class="desserts 1">
-                                <h3>Farandole de desserts</h3>
-                                <p>du chefs</p>
-                                <div class="prix right">
-                                    <span>18€</span>
-                                </div>
-                                <div class="check">
-                                    <i class="fas fa-check-circle"></i>
-                                </div>
+                            <div class="entrees">
+                            <h3>Bouchée de homard croustillant</h3>
+                            <p>Et sa farandole de petit légumes</p>
+                            <div class="prix-right">
+                                <span>35€</span>
                             </div>
-                            <div class="desserts 2">
-                                <h3>Crème brulée</h3>
-                                <p>Revisitée</p>
-                                <div class="prix right">
-                                    <span>22€</span>
-                                </div>
-                                <div class="check">
-                                    <i class="fas fa-check-circle"></i>
-                                </div>
-                            </div>                            
-                            <div class="desserts 3">
-                                <h3>Tiramisu</h3>
-                                <p>Â La noisette</p>
-                                <div class="prix right">
-                                    <span>23€</span>
-                                </div>
-                                <div class="check">
-                                    <i class="fas fa-check-circle"></i>
-                                </div>
+                            <div class="check">
+                                <i class="fas fa-check-circle"></i>
                             </div>
                         </div>
-                        <div id="b-Commander">
-                           <p>Commander</p>
+                        <div class="entrees">
+                            <h3>Velouté de cèpes</h3>
+                            <p>Aux Truffes</p>
+                            <div class="prix-right">
+                                <span>20€</span>
+                            </div>
+                            <div class="check">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
                         </div>
-                    </div>                                           
-                </section>
-                            <!--Bas de page-->    
-                    <footer>
-                        <div id="logo-footer">
-                            <p>ohmyfood</p>
+                    </div>                        
+                    <div id="plats"> <!--Plats-->
+                        <h2>PLATS</h2>
+                        <div class="plats">
+                            <h3>Poulet rôti aux herbes de Provence</h3>
+                            <p>Et sa crème de truffe</p>
+                             <div class="prix-right">
+                                <span>40€</span>
+                            </div>
+                            <div class="check">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
                         </div>
-                        <ul>
-                            <li>
-                                <a href="P3_autre_lien/proposer-un-restaurant.html">
+                        <div class="plats">
+                            <h3>Langouste rôtie</h3>
+                            <p>Et ses légumes de saison</p>
+                            <div class="prix-right">
+                                <span>35€</span>
+                            </div>  
+                            <div class="check">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                        <div class="plats">
+                            <h3>Côte de Boeuf Angus</h3>
+                            <p>Et sa purée de panais</p>
+                            <div class="prix-right">
+                                <span>44€</span>
+                            </div>
+                            <div class="check">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </div>                                
+                    <div id="desserts"> <!--Desserts-->
+                        <h2>DESSERTS</h2>
+                        <div class="desserts">
+                            <h3>Farandole de desserts</h3>
+                            <p>du chefs</p>
+                            <div class="prix-right">
+                                <span>18€</span>
+                            </div>
+                            <div class="check">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                        <div class="desserts">
+                            <h3>Crème brulée</h3>
+                            <p>Revisitée</p>
+                            <div class="prix-right">
+                                <span>22€</span>
+                            </div>
+                            <div class="check">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </div>                            
+                        <div class="desserts">
+                            <h3>Tiramisu</h3>
+                            <p>Â La noisette</p>
+                            <div class="prix-right">
+                                <span>23€</span>
+                            </div>
+                            <div class="check">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="b-commander">
+                        <p>Commander</p>
+                    </div>
+                </div>                                           
+            </section>                           
+            <footer> <!--Bas de page-->    
+                <div id="logo-footer">
+                    <p>ohmyfood</p>
+                </div>
+                    <ul>
+                        <li>
+                            <a href="P3_autre_lien/proposer-un-restaurant.html">
                                 <i class="fas fa-utensils"></i>
                                 Proposer un restaurant
-                                </a>                           
-                            </li>
-                            <li>
-                                <a href="P3_autre_lien/devenir-partenaire.html">
-                                <i class="fas fa-hands-helping"></i>
-                                Devenir partenaire
-                                </a>
-                            </li>
-                            <li>
-                                <a href="P3_autre_lien/mentions-légales.html">
-                                Mentions légales
-                                </a>
-                            </li>
-                            <li>
-                                <a href="P3_autre_lien/Contact.html">
-                                Contact
-                                </a>
-                            </li>
-                        </ul>
-                    </footer>
-                </div>          
-            </div>
+                            </a>                           
+                        </li>
+                        <li>
+                            <a href="P3_autre_lien/devenir-partenaire.html">
+                            <i class="fas fa-hands-helping"></i>
+                            Devenir partenaire
+                            </a>
+                        </li>
+                        <li>
+                            <a href="P3_autre_lien/mentions-légales.html">
+                            Mentions légales
+                        </a>
+                        </li>
+                        <li>
+                            <a href="P3_autre_lien/Contact.html">
+                            Contact
+                            </a>
+                        </li>
+                    </ul>
+            </footer>                        
+        </div>
         </body>
 </html>
