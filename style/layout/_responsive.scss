@@ -1,0 +1,11 @@
+@media screen and (max-width: 1024px){
+    body{
+        margin: 0;
+    }
+    .logo-principal{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

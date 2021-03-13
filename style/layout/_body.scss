@@ -144,3 +144,18 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
+//*check*/
+.check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $colour-tertiary;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 25%;
+    height: 80px;
+}
+.fas.fa-check-circle{
+    color:$colour-primary ;
+    font-size: 22px;
+}

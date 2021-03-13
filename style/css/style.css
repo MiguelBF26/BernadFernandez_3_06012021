@@ -339,6 +339,22 @@ h1, h3 {
   margin-bottom: 20px;
 }
 
+.check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 25%;
+  height: 80px;
+}
+
+.fas.fa-check-circle {
+  color: #f6f6f6;
+  font-size: 22px;
+}
+
 footer {
   display: flex;
   justify-content: left;
@@ -367,13 +383,58 @@ footer li {
   margin-left: 20px;
 }
 
-.far.fa-heart {
-  color: black;
-  transition: transform 450ms, background-color 300ms 150ms;
-}
 .far.fa-heart:hover {
-  transform: scale(1);
   outline-color: #9356DC;
+  transform: scale(1.5);
+}
+
+.far.fa-heart {
+  transition: transform 330ms ease-in-out 550ms;
+}
+
+.check {
+  transform-origin: 100%;
+  transform: scaleX(0);
+  transition: transform 1000ms;
+}
+
+.fas.fa-check-circle {
+  transform: rotate(-360deg);
+  transition: transform 1000ms ease-in-out;
+}
+
+.entrees:hover > .check.e {
+  transform: scaleX(1);
+}
+.entrees:hover > .check.e .fas.fa-check-circle {
+  transform: rotate(0deg);
+}
+
+.plats:hover > .check.p {
+  transform: scaleX(1);
+}
+.plats:hover > .check.p .fas.fa-check-circle {
+  transform: rotate(0deg);
+}
+
+.desserts:hover > .check.d {
+  transform: scaleX(1);
+}
+.desserts:hover > .check.d .fas.fa-check-circle {
+  transform: rotate(0deg);
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    margin: 0;
+  }
+
+  .logo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

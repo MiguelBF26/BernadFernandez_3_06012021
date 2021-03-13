@@ -1,8 +1,52 @@
-.far.fa-heart{
-    color: black;
-    transition: transform 450ms, background-color 300ms 150ms;
-    &:hover{
-        transform: scale(1);
+
+.far.fa-heart {
+    &:hover {
         outline-color: $colour-button-purple;
+        transform: scale(1.5);
+    }
+}
+.far.fa-heart{
+    transition: transform 330ms ease-in-out 550ms;
+}
+
+//*le bouton Check*/
+
+.check{
+    transform-origin: 100%;
+    transform: scaleX(0);
+    transition: transform 1000ms;
+}
+.fas.fa-check-circle{
+    transform: rotate(-360deg);
+    transition: transform 1000ms ease-in-out;
+}
+.entrees{
+    &:hover{
+        & > .check.e{
+            transform: scaleX(1);        
+            & .fas.fa-check-circle{
+                transform: rotate(0deg);
+            }
+        }
+    }
+ }
+.plats{
+    &:hover{
+        & > .check.p{
+            transform: scaleX(1);
+            & .fas.fa-check-circle{
+                transform: rotate(0deg);
+            }
+        }
+    }
+}
+.desserts{
+    &:hover{
+        & > .check.d{
+            transform: scaleX(1);
+            & .fas.fa-check-circle{
+                transform: rotate(0deg);
+            }
+        }
     }
 }
