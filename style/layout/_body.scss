@@ -1,3 +1,4 @@
+
 //*Section de l'accuiel/
 
 #resto{
@@ -33,11 +34,15 @@
     text-align: left;
     font-size: 85%;
     font-weight: bold;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     margin-top: 5px;
     margin-left: 10px;
     margin-bottom: 2px;
 }
 .menu p{
+    text-overflow: ellipsis;
+    white-space: nowrap;
     text-align: left;
     font-size: 85%;
     margin-top: 1px;

@@ -1,3 +1,62 @@
+@media screen and (min-width: 500px) and (max-width: 768px){
+    #logo-principal{
+        img{
+            width: 40%;
+        }
+    }
+    #boutonFonction{
+        .bouton{
+            width: 80%;
+            height: 40px;
+            font-size: 18px;
+        }
+        span{
+            position: absolute;
+            left: 26px;
+        }
+        .fas.fa-mobile-alt , .fas.fa-list-ul , .fas.fa-store{
+            font-size: 20px;
+        }
+    }
+    .nouveau{
+        position: absolute;
+        right: 50px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    #logo-principal{
+        img{
+            width: 40%;
+        }
+    }
+    #boutonFonction{
+        display: flex;
+        flex-direction: row;
+        .bouton{
+            width: 45%;
+            height: 40px;
+            margin-left: 10px;
+            font-size: 12px;
+        }
+        span{
+            position: none;
+        }
+        .fas.fa-mobile-alt , .fas.fa-list-ul , .fas.fa-store{
+            font-size: 18px;
+        }
+    }
+    #restaurant{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .menu{
+        width: 45%;
+    }
+    .nouveau{
+
+    }
+}
 @media screen and (max-width: 1024px){
     body{
         margin: 0;

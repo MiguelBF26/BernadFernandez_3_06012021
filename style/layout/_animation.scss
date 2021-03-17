@@ -1,14 +1,24 @@
-
-.far.fa-heart {
-    &:hover {
-        outline-color: $colour-button-purple;
-        transform: scale(1.5);
+//*Les likes*/
+.like {
+    position: absolute;
+    right: 8%;
+    .far{
+        font-size: 20px;
+    }
+    &:hover .fas {
+        font-size: 16px;
+        transform-origin: bottom;
+        transition: transform 400ms;
+        transform: scaleX(1);
+    }
+    .fas {
+        color: $colour-button-purple;
+        position: absolute;
+        margin-top: 1px;
+        right: 10%;
+        transform: scaleX(0);
     }
 }
-.far.fa-heart{
-    transition: transform 330ms ease-in-out 550ms;
-}
-
 //*le bouton Check*/
 
 .check{

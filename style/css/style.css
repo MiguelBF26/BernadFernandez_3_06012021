@@ -383,13 +383,25 @@ footer li {
   margin-left: 20px;
 }
 
-.far.fa-heart:hover {
-  outline-color: #9356DC;
-  transform: scale(1.5);
+.like {
+  position: absolute;
+  right: 8%;
 }
-
-.far.fa-heart {
-  transition: transform 330ms ease-in-out 550ms;
+.like .far {
+  font-size: 20px;
+}
+.like:hover .fas {
+  font-size: 16px;
+  transform-origin: bottom;
+  transition: transform 400ms;
+  transform: scaleX(1);
+}
+.like .fas {
+  color: #9356DC;
+  position: absolute;
+  margin-top: 1px;
+  right: 10%;
+  transform: scaleX(0);
 }
 
 .check {
@@ -424,6 +436,61 @@ footer li {
   transform: rotate(0deg);
 }
 
+@media screen and (min-width: 500px) and (max-width: 768px) {
+  #logo-principal img {
+    width: 40%;
+  }
+
+  #boutonFonction .bouton {
+    width: 80%;
+    height: 40px;
+    font-size: 18px;
+  }
+  #boutonFonction span {
+    position: absolute;
+    left: 26px;
+  }
+  #boutonFonction .fas.fa-mobile-alt, #boutonFonction .fas.fa-list-ul, #boutonFonction .fas.fa-store {
+    font-size: 20px;
+  }
+
+  .nouveau {
+    position: absolute;
+    right: 50px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #logo-principal img {
+    width: 40%;
+  }
+
+  #boutonFonction {
+    display: flex;
+    flex-direction: row;
+  }
+  #boutonFonction .bouton {
+    width: 45%;
+    height: 40px;
+    margin-left: 10px;
+    font-size: 12px;
+  }
+  #boutonFonction span {
+    position: none;
+  }
+  #boutonFonction .fas.fa-mobile-alt, #boutonFonction .fas.fa-list-ul, #boutonFonction .fas.fa-store {
+    font-size: 18px;
+  }
+
+  #restaurant {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .menu {
+    width: 45%;
+  }
+}
 @media screen and (max-width: 1024px) {
   body {
     margin: 0;
