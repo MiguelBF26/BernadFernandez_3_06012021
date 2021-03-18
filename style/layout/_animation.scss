@@ -60,3 +60,32 @@
         }
     }
 }
+//*écran de chargement*/
+#loading{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $colour-primary;
+    text-shadow: 1px 5px 15px grey;
+    @include flex-box-button;
+    font-family: 'Shrikhand';
+    font-size: 40px;
+    z-index: 7;
+    animation: flash 3s linear infinite;
+}
+@keyframes flash{
+    0%{
+        font-size: 40px;
+    }
+    50%{
+        font-size: 43px;
+        text-shadow: 1px 10px 15px grey;
+    }
+    100%{
+        font-size: 40px;
+    }
+}
+.fondu-out {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
