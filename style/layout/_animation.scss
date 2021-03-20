@@ -32,17 +32,18 @@
 }
 .entrees{
     &:hover{
-        & > .check.e{
+        & > .check{
             transform: scaleX(1);        
             & .fas.fa-check-circle{
                 transform: rotate(0deg);
             }
         }
     }
- }
+}
+
 .plats{
     &:hover{
-        & > .check.p{
+        & > .check{
             transform: scaleX(1);
             & .fas.fa-check-circle{
                 transform: rotate(0deg);
@@ -52,7 +53,7 @@
 }
 .desserts{
     &:hover{
-        & > .check.d{
+        & > .check{
             transform: scaleX(1);
             & .fas.fa-check-circle{
                 transform: rotate(0deg);

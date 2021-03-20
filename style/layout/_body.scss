@@ -133,10 +133,7 @@
     @include margin-h2;
 }
 
-#auMenu span{
-    font-weight: bold;
-    font-size: 15px;
-}
+
 #b-commander{
     @include flex-box-button;
     font-weight: bold;
@@ -149,6 +146,16 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
+.prix-right{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+        span{
+        align-self:flex-end ;
+        font-size: 14px;
+    }
+}
+
 //*check*/
 .check{
     display: flex;
