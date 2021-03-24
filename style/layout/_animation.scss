@@ -3,19 +3,24 @@
     position: absolute;
     right: 8%;
     .far{
-        font-size: 20px;
+        opacity: 1;
+        font-size: 25px;
     }
-    &:hover .fas {
-        font-size: 16px;
-        transform-origin: bottom;
-        transition: transform 400ms;
-        transform: scaleX(1);
+    &:hover{
+        & .fas {
+            font-size: 26px;
+            transform-origin: bottom;
+            transition: transform 400ms;
+            transform: scaleX(1);
+        }
+        & .far {
+            opacity: 0;
+        }
     }
     .fas {
         color: $colour-button-purple;
         position: absolute;
-        margin-top: 1px;
-        right: 10%;
+        right: 0%;
         transform: scaleX(0);
     }
 }
@@ -33,7 +38,7 @@
 .entrees{
     &:hover{
         & > .check{
-            transform: scaleX(1);        
+            transform: scaleX(1);
             & .fas.fa-check-circle{
                 transform: rotate(0deg);
             }
@@ -61,6 +66,9 @@
         }
     }
 }
+
+
+
 //*écran de chargement*/
 #loading{
     position:absolute;
@@ -72,21 +80,45 @@
     font-family: 'Shrikhand';
     font-size: 40px;
     z-index: 7;
-    animation: flash 3s linear infinite;
+    animation:  flash 6s both;
 }
 @keyframes flash{
     0%{
-        font-size: 40px;
+        transform: scale(1);
+        opacity: 1;
+    }
+    25%{
+        transform: scale(1.1);
+        text-shadow: 1px 10px 15px grey;
+        opacity: 1;
     }
     50%{
-        font-size: 43px;
+        transform: scale(1);
+        opacity: 1;
+    }
+    75%{
+        transform: scale(1.1);
         text-shadow: 1px 10px 15px grey;
+        opacity: 1;
     }
     100%{
-        font-size: 40px;
+        transform: scale(1);
+        opacity: 0;
     }
 }
-.fondu-out {
-    opacity: 0;
-    transition: opacity 1s ease-out;
+//**/
+.entrees , .plats , .desserts{
+    transform: translateY(50px,0);
+    animation: opace 1s linear;
+}
+@keyframes opace{
+    0%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
 }

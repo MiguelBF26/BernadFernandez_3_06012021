@@ -285,7 +285,6 @@ h1, h3 {
 
 .entrees, .plats, .desserts {
   display: flex;
-  justify-content: left;
   flex-direction: column;
   flex-wrap: wrap;
   box-shadow: 1px 5px 15px lightgrey;
@@ -334,17 +333,15 @@ h1, h3 {
   font-size: 90%;
   width: 70%;
   height: 40px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 50px;
 }
 
 .prix-right {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  margin-top: 45px;
+  margin-left: 20px;
 }
 .prix-right span {
-  align-self: flex-end;
+  text-align: right;
   font-size: 14px;
 }
 
@@ -366,7 +363,6 @@ h1, h3 {
 
 footer {
   display: flex;
-  justify-content: left;
   flex-direction: column;
   flex-wrap: wrap;
   background-color: #353535;
@@ -397,19 +393,22 @@ footer li {
   right: 8%;
 }
 .like .far {
-  font-size: 20px;
+  opacity: 1;
+  font-size: 25px;
 }
 .like:hover .fas {
-  font-size: 16px;
+  font-size: 26px;
   transform-origin: bottom;
   transition: transform 400ms;
   transform: scaleX(1);
 }
+.like:hover .far {
+  opacity: 0;
+}
 .like .fas {
   color: #9356DC;
   position: absolute;
-  margin-top: 1px;
-  right: 10%;
+  right: 0%;
   transform: scaleX(0);
 }
 
@@ -457,26 +456,49 @@ footer li {
   font-family: "Shrikhand";
   font-size: 40px;
   z-index: 7;
-  animation: flash 3s linear infinite;
+  animation: flash 6s both;
 }
 
 @keyframes flash {
   0% {
-    font-size: 40px;
+    transform: scale(1);
+    opacity: 1;
+  }
+  25% {
+    transform: scale(1.1);
+    text-shadow: 1px 10px 15px grey;
+    opacity: 1;
   }
   50% {
-    font-size: 43px;
+    transform: scale(1);
+    opacity: 1;
+  }
+  75% {
+    transform: scale(1.1);
     text-shadow: 1px 10px 15px grey;
+    opacity: 1;
   }
   100% {
-    font-size: 40px;
+    transform: scale(1);
+    opacity: 0;
   }
 }
-.fondu-out {
-  opacity: 0;
-  transition: opacity 1s ease-out;
+.entrees, .plats, .desserts {
+  transform: translateY(50px, 0);
+  animation: opace 1s linear;
 }
 
+@keyframes opace {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media screen and (min-width: 500px) and (max-width: 768px) {
   #logo-principal img {
     width: 40%;
@@ -516,7 +538,7 @@ footer li {
     font-size: 12px;
   }
   #boutonFonction span {
-    position: none;
+    position: static;
   }
   #boutonFonction .fas.fa-mobile-alt, #boutonFonction .fas.fa-list-ul, #boutonFonction .fas.fa-store {
     font-size: 18px;

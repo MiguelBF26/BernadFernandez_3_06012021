@@ -39,7 +39,7 @@
             font-size: 12px;
         }
         span{
-            position: none;
+            position: static;
         }
         .fas.fa-mobile-alt , .fas.fa-list-ul , .fas.fa-store{
             font-size: 18px;
@@ -54,7 +54,6 @@
         width: 45%;
     }
     .nouveau{
-
     }
 }
 @media screen and (max-width: 1024px){
