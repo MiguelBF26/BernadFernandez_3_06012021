@@ -400,6 +400,9 @@ footer li {
   font-size: 26px;
   transform-origin: bottom;
   transition: transform 400ms;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   transform: scaleX(1);
 }
 .like:hover .far {

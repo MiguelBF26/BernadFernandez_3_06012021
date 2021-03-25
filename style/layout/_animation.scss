@@ -11,6 +11,9 @@
             font-size: 26px;
             transform-origin: bottom;
             transition: transform 400ms;
+            @include double-colour;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             transform: scaleX(1);
         }
         & .far {
