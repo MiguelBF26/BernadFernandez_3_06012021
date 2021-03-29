@@ -17,10 +17,12 @@
    
 }
 .menu{
+    display: flex;
+    justify-self: left;
     @include button-shadow;    
     border-radius: 15px;
     width: 90%;
-    height: 200px;
+    height: 230px;
     margin: 10px;
 }
 .menu img{
@@ -28,11 +30,11 @@
     border-top-left-radius: 15px;
     object-fit: cover;
     width: 100%;
-    height: 140px;
+    height: 160px;
 }
 .menu h3{
     text-align: left;
-    font-size: 85%;
+    font-size: 95%;
     font-weight: bold;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -44,7 +46,7 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     text-align: left;
-    font-size: 85%;
+    font-size: 92%;
     margin-top: 1px;
     margin-left: 10px;
 }
@@ -64,9 +66,9 @@
 }
 .like{
     display: flex;
-    justify-content: right;
     align-self: flex-end;
-    margin: 0;
+    margin-bottom: 25px;
+    margin-right: 20px;
 }
 
 #auMenu{
@@ -109,7 +111,8 @@
     @include flex-box-column;
 }
 .entrees , .plats , .desserts{
-    @include flex-box ;
+    display: flex;
+    justify-content: space-between;
     @include button-shadow;
     border-radius: 20px;
     width: 95%;
@@ -117,20 +120,30 @@
     margin: auto;
     margin-bottom: 15px;
 }
-#auMenu h2{
-    border-bottom: $colour-tertiary 2px solid;
-    width: 10%;
-    font-size: 18px;
-    @include margin-h2;
+#auMenu{
+    & h2{
+        border-bottom: $colour-tertiary 2px solid;
+        width: 10%;
+        font-size: 18px;
+        @include margin-h2;
+    }
+    & h3{
+        text-overflow: ellipsis;
+        font-weight: bold;
+        font-size: 16px;
+        @include margin-h3;
+    }
+    & p{
+        text-overflow: ellipsis;
+        font-size: 15px;
+        @include margin-h2;
+    }
 }
-#auMenu h3{
-    font-weight: bold;
-    font-size: 15px;
-    @include margin-h3;
-}
-#auMenu p{
-    font-size: 12px;
-    @include margin-h2;
+.bloc{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    text-overflow: ellipsis;
 }
 
 
@@ -146,26 +159,25 @@
     margin: 20px 50px;
 }
 .prix-right{
-    margin-top: 45px;
-    margin-left: 20px;
-        span{
-        text-align: right;
-        font-size: 14px;
-    }
+    display: flex;
+    justify-self: right;
+    align-items: flex-end;
+    width: 30px;
+    height: 60px;
+    text-align: right;
+    font-family: 'Roboto-bold';
+    font-size: 16px;
+    margin-right: 20px;
 }
 
 //*check*/
 .check{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $colour-tertiary;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    width: 25%;
-    height: 80px;
+    display: none;
+    
 }
 .fas.fa-check-circle{
+    text-align: center;
+    padding: 50px 50px;
     color:$colour-primary ;
     font-size: 22px;
 }
