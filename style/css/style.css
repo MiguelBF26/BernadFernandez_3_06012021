@@ -33,10 +33,6 @@ h1, h3 {
 }
 
 #menu {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
   border-bottom: 1px black solid;
   box-shadow: 1px 0px 5px black;
 }
@@ -432,6 +428,9 @@ footer li {
   transition: transform 1000ms ease-in-out;
 }
 
+.entrees {
+  transition: 0.5s linear;
+}
 .entrees:hover > .check {
   display: contents;
   background-color: #99E2D0;
@@ -538,10 +537,18 @@ footer li {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  #logo-principal img {
-    width: 40%;
+  #menu #logo-principal img {
+    width: 30%;
   }
 
+  #menu-bis {
+    display: flex;
+    justify-content: space-between;
+  }
+  #menu-bis #logo-principal {
+    margin-right: 8em;
+    width: 70%;
+  }
   #boutonFonction {
     display: flex;
     flex-direction: row;

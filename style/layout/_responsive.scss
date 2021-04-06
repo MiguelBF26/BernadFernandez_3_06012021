@@ -24,24 +24,37 @@
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px){
-    #logo-principal{
-        img{
-            width: 40%;
+    #menu{
+        #logo-principal{
+            & img{
+                width: 30%;
+            }
+        }
+    }
+    #menu-bis{
+        display: flex;
+        justify-content: space-between;
+        & #logo-principal{
+            margin-right: 8em;
+            width: 70%;
+        }
+        & .retour{
+            
         }
     }
     #boutonFonction{
         display: flex;
         flex-direction: row;
-        .bouton{
+        & .bouton{
             width: 45%;
             height: 40px;
             margin-left: 10px;
             font-size: 12px;
         }
-        span{
+        & span{
             position: static;
         }
-        .fas.fa-mobile-alt , .fas.fa-list-ul , .fas.fa-store{
+        & .fas.fa-mobile-alt , .fas.fa-list-ul , .fas.fa-store{
             font-size: 18px;
         }
     }
