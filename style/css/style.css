@@ -323,7 +323,6 @@ h1, h3 {
   display: flex;
   justify-content: left;
   flex-direction: column;
-  text-overflow: ellipsis;
 }
 
 #b-commander {
@@ -443,6 +442,9 @@ footer li {
 .entrees:hover > .check .fas.fa-check-circle {
   transform: rotate(0deg);
 }
+.entrees:hover .bloc {
+  width: 50%;
+}
 
 .plats:hover > .check {
   transform: scaleX(1);
@@ -549,6 +551,7 @@ footer li {
     margin-right: 8em;
     width: 70%;
   }
+
   #boutonFonction {
     display: flex;
     flex-direction: row;

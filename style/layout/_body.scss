@@ -143,7 +143,6 @@
     display: flex;
     justify-content: left;
     flex-direction: column;
-    text-overflow: ellipsis;
 }
 
 
@@ -173,7 +172,6 @@
 //*check*/
 .check{
     display: none;
-    
 }
 .fas.fa-check-circle{
     text-align: center;
