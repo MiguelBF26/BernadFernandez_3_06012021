@@ -129,12 +129,14 @@
     }
     & h3{
         text-overflow: ellipsis;
+        overflow: hidden;
         font-weight: bold;
         font-size: 16px;
         @include margin-h3;
     }
     & p{
         text-overflow: ellipsis;
+        overflow: hidden;
         font-size: 15px;
         @include margin-h2;
     }
@@ -143,6 +145,8 @@
     display: flex;
     justify-content: left;
     flex-direction: column;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 
@@ -171,7 +175,15 @@
 
 //*check*/
 .check{
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $colour-tertiary;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 25%;
+    height: 80px;
+    transform: 1s scaleX(1);
 }
 .fas.fa-check-circle{
     text-align: center;

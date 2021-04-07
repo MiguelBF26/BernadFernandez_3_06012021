@@ -42,14 +42,7 @@
     transition: 0.5s linear;
     &:hover{
         & > .check{
-            display: contents;
-            background-color: $colour-tertiary;
-            border-top-right-radius: 20px;
-            border-bottom-right-radius: 20px;
-            width: 25%;
-            height: 80px;
-            transform: 1s scaleX(1);
-            
+            transform: scaleX(1);
             & .fas.fa-check-circle{
                 transform: rotate(0deg);
             }
@@ -85,38 +78,53 @@
 
 //*écran de chargement*/
 #loading{
-    position:absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     background-color: $colour-primary;
     text-shadow: 1px 5px 15px grey;
     @include flex-box-button;
-    font-family: 'Shrikhand';
-    font-size: 40px;
+    animation: end 6s both;
     z-index: 7;
-    animation:  flash 6s both;
+    & h1{
+        animation:  flash 6s both;
+        font-family: 'Shrikhand';
+        font-size: 40px;
+    }
+    
 }
 @keyframes flash{
     0%{
-        transform: scale(1);
+        transform: scale(0.9);
         opacity: 1;
     }
     25%{
-        transform: scale(1.1);
+        transform: scale(1);
         text-shadow: 1px 10px 15px grey;
         opacity: 1;
     }
     50%{
-        transform: scale(1);
+        transform: scale(0.9);
         opacity: 1;
     }
     75%{
-        transform: scale(1.1);
+        transform: scale(1);
         text-shadow: 1px 10px 15px grey;
         opacity: 1;
     }
     100%{
-        transform: scale(1);
+        transform: scale(0.9);
+        opacity: 0;
+    }
+}
+@keyframes end{
+    0%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
         opacity: 0;
     }
 }
