@@ -93,6 +93,7 @@ h1, h3 {
   color: #ffff;
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 75px;
+  box-shadow: 1px 1px 3px grey;
   font-size: 90%;
   width: 70%;
   height: 40px;
@@ -272,7 +273,7 @@ h1, h3 {
   font-family: "Shrikhand";
   font-size: 30px;
   color: black;
-  margin-right: 70px;
+  margin-right: 90px;
 }
 
 .far.fa-heart {
@@ -329,6 +330,7 @@ h1, h3 {
   display: flex;
   justify-content: left;
   flex-direction: column;
+  width: 90%;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -340,11 +342,13 @@ h1, h3 {
   font-weight: bold;
   color: #ffff;
   background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 1px 1px 3px grey;
   border-radius: 75px;
   font-size: 90%;
-  width: 70%;
+  width: 50%;
   height: 40px;
-  margin: 20px 50px;
+  padding-top: 5px;
+  margin: 35px 90px 50px;
 }
 
 .prix-right {
@@ -366,9 +370,9 @@ h1, h3 {
   background-color: #99E2D0;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  width: 25%;
+  width: 0%;
   height: 80px;
-  transform: 1s scaleX(1);
+  transform: 1s scaleX(0);
 }
 
 .fas.fa-check-circle {
@@ -448,16 +452,15 @@ footer li {
 }
 .entrees:hover > .check {
   transform: scaleX(1);
+  width: 25%;
 }
 .entrees:hover > .check .fas.fa-check-circle {
   transform: rotate(0deg);
 }
-.entrees:hover .bloc {
-  width: 50%;
-}
 
 .plats:hover > .check {
   transform: scaleX(1);
+  width: 25%;
 }
 .plats:hover > .check .fas.fa-check-circle {
   transform: rotate(0deg);
@@ -465,9 +468,20 @@ footer li {
 
 .desserts:hover > .check {
   transform: scaleX(1);
+  width: 25%;
 }
 .desserts:hover > .check .fas.fa-check-circle {
   transform: rotate(0deg);
+}
+
+:hover.explorer {
+  transition: transform 2s;
+  box-shadow: 5px 5px 5px darkgrey;
+}
+
+:hover #b-commander {
+  transition: transform 2s;
+  box-shadow: 5px 5px 5px darkgrey;
 }
 
 #loading {

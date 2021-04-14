@@ -100,11 +100,13 @@
 .nom-du-menu{  
     font-family: "Shrikhand";
     font-size: 30px;
-    color: black;
-    margin-right: 70px; 
+    color: black; 
+    margin-right: 90px; 
 }
 .far.fa-heart{
     font-size: 20px;
+    
+    
 } 
 
 #entrees , #plats , #desserts{
@@ -145,6 +147,7 @@
     display: flex;
     justify-content: left;
     flex-direction: column;
+    width: 90%;
     white-space: nowrap;
     overflow: hidden;
 }
@@ -155,11 +158,13 @@
     font-weight: bold;
     color: $colour-button;
     @include double-colour;
+    box-shadow: 1px 1px 3px grey;
     border-radius: 75px;
     font-size:90%;
-    width: 70%;
+    width: 50%;
     height: 40px;
-    margin: 20px 50px;
+    padding-top: 5px;
+    margin: 35px 90px 50px;
 }
 .prix-right{
     display: flex;
@@ -167,7 +172,7 @@
     align-items: flex-end;
     width: 30px;
     height: 60px;
-    text-align: right;
+    text-align: right; 
     font-family: 'Roboto-bold';
     font-size: 16px;
     margin-right: 20px;
@@ -181,9 +186,9 @@
     background-color: $colour-tertiary;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    width: 25%;
+    width: 0%;
     height: 80px;
-    transform: 1s scaleX(1);
+    transform: 1s scaleX(0);
 }
 .fas.fa-check-circle{
     text-align: center;

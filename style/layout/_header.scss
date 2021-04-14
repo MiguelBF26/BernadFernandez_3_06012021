@@ -50,6 +50,7 @@
     color: $colour-button;
     @include double-colour;
     border-radius: 75px;
+    box-shadow: 1px 1px 3px grey;
     font-size:90%;
     width: 70%;
     height: 40px;

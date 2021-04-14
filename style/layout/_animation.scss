@@ -43,12 +43,11 @@
     &:hover{
         & > .check{
             transform: scaleX(1);
+            width: 25%;
             & .fas.fa-check-circle{
                 transform: rotate(0deg);
+                
             }
-        }
-        & .bloc{
-            width: 50%;
         }
     }
 }
@@ -57,8 +56,10 @@
     &:hover{
         & > .check{
             transform: scaleX(1);
+            width: 25%;
             & .fas.fa-check-circle{
                 transform: rotate(0deg);
+            
             }
         }
     }
@@ -67,13 +68,29 @@
     &:hover{
         & > .check{
             transform: scaleX(1);
+            width: 25%;
             & .fas.fa-check-circle{
                 transform: rotate(0deg);
+                
             }
         }
     }
 }
 
+
+//*Bouton*/
+:hover{
+    &.explorer{
+        transition: transform 2s;
+        box-shadow: 5px 5px 5px darkgrey;
+    }
+}
+:hover{
+    & #b-commander{
+        transition: transform 2s;
+        box-shadow: 5px 5px 5px darkgrey;
+    }
+}
 
 
 //*écran de chargement*/
