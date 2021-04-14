@@ -46,7 +46,7 @@
             width: 25%;
             & .fas.fa-check-circle{
                 transform: rotate(0deg);
-                
+                opacity: 1;
             }
         }
     }
@@ -59,7 +59,7 @@
             width: 25%;
             & .fas.fa-check-circle{
                 transform: rotate(0deg);
-            
+                opacity: 1;
             }
         }
     }
@@ -71,7 +71,7 @@
             width: 25%;
             & .fas.fa-check-circle{
                 transform: rotate(0deg);
-                
+                opacity: 1;
             }
         }
     }
@@ -103,6 +103,7 @@
     @include flex-box-button;
     animation: end 6s both;
     z-index: 7;
+    pointer-events: none;
     & h1{
         animation:  flash 6s both;
         font-family: 'Shrikhand';

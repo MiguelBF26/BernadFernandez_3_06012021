@@ -380,6 +380,7 @@ h1, h3 {
   padding: 50px 50px;
   color: #f6f6f6;
   font-size: 22px;
+  opacity: 0;
 }
 
 footer {
@@ -456,6 +457,7 @@ footer li {
 }
 .entrees:hover > .check .fas.fa-check-circle {
   transform: rotate(0deg);
+  opacity: 1;
 }
 
 .plats:hover > .check {
@@ -464,6 +466,7 @@ footer li {
 }
 .plats:hover > .check .fas.fa-check-circle {
   transform: rotate(0deg);
+  opacity: 1;
 }
 
 .desserts:hover > .check {
@@ -472,6 +475,7 @@ footer li {
 }
 .desserts:hover > .check .fas.fa-check-circle {
   transform: rotate(0deg);
+  opacity: 1;
 }
 
 :hover.explorer {
@@ -495,6 +499,7 @@ footer li {
   align-items: center;
   animation: end 6s both;
   z-index: 7;
+  pointer-events: none;
 }
 #loading h1 {
   animation: flash 6s both;
