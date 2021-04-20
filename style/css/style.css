@@ -36,11 +36,6 @@ h1, h3 {
   position: relative;
 }
 
-#menu {
-  border-bottom: 1px black solid;
-  box-shadow: 1px 0px 5px black;
-}
-
 #logo-principal {
   display: flex;
   justify-content: center;
@@ -92,10 +87,11 @@ h1, h3 {
   font-weight: bold;
   color: #ffff;
   background: linear-gradient(#FF79DA, #9356DC);
+  font-family: "Roboto-thin";
   border-radius: 75px;
   box-shadow: 1px 1px 3px grey;
-  font-size: 90%;
-  width: 70%;
+  font-size: 13px;
+  width: 55%;
   height: 40px;
 }
 
@@ -119,8 +115,10 @@ h1, h3 {
   box-shadow: 1px 5px 15px lightgrey;
   border-radius: 15px;
   margin: 0;
+  font-size: 14px;
+  font-family: "Roboto-bold";
   width: 85%;
-  height: 30px;
+  height: 40px;
   padding: 10px;
   margin-bottom: 10px;
 }
@@ -137,9 +135,13 @@ h1, h3 {
   width: 21px;
   height: 20px;
 }
-#boutonFonction .fas.fa-mobile-alt, #boutonFonction .fas.fa-list-ul, #boutonFonction .fas.fa-store {
+#boutonFonction .fas.fa-mobile-alt, #boutonFonction .fas.fa-list-ul {
   text-align: center;
   color: grey;
+}
+#boutonFonction .fas.fa-store {
+  text-align: center;
+  color: #9356DC;
 }
 
 .bouton.btn--voilet {
@@ -203,16 +205,12 @@ h1, h3 {
   text-align: left;
   font-size: 95%;
   font-weight: bold;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   margin-top: 5px;
   margin-left: 10px;
   margin-bottom: 2px;
 }
 
 .menu p {
-  text-overflow: ellipsis;
-  white-space: nowrap;
   text-align: left;
   font-size: 92%;
   margin-top: 1px;
@@ -220,6 +218,7 @@ h1, h3 {
 }
 
 .nouveau {
+  font-family: "Roboto-bold";
   position: absolute;
   right: 40px;
   margin-top: 10px;
@@ -228,7 +227,6 @@ h1, h3 {
   height: 18px;
   background-color: #99E2D0;
   color: darkgreen;
-  font-weight: bold;
   font-size: 12px;
   text-align: center;
 }
@@ -339,6 +337,12 @@ h1, h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 30px 30px;
+}
+#b-commander .bouton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: bold;
   color: #ffff;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -346,18 +350,14 @@ h1, h3 {
   border-radius: 75px;
   font-size: 90%;
   width: 50%;
-  height: 40px;
-  padding-top: 5px;
-  margin: 35px 90px 50px;
+  height: 45px;
 }
 
 .prix-right {
   display: flex;
-  justify-self: right;
   align-items: flex-end;
   width: 30px;
   height: 60px;
-  text-align: right;
   font-family: "Roboto-bold";
   font-size: 16px;
   margin-right: 20px;
@@ -459,6 +459,9 @@ footer li {
   transform: rotate(0deg);
   opacity: 1;
 }
+.entrees:hover .prix-right {
+  animation: pright 800ms linear;
+}
 
 .plats:hover > .check {
   transform: scaleX(1);
@@ -467,6 +470,9 @@ footer li {
 .plats:hover > .check .fas.fa-check-circle {
   transform: rotate(0deg);
   opacity: 1;
+}
+.plats:hover .prix-right {
+  animation: pright 800ms linear;
 }
 
 .desserts:hover > .check {
@@ -477,14 +483,25 @@ footer li {
   transform: rotate(0deg);
   opacity: 1;
 }
+.desserts:hover .prix-right {
+  animation: pright 800ms linear;
+}
 
+@keyframes pright {
+  0% {
+    transform: translateX(95px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
 :hover.explorer {
-  transition: transform 2s;
+  background: linear-gradient(#FFAAE8, #AE7CE9);
   box-shadow: 5px 5px 5px darkgrey;
 }
 
-:hover #b-commander {
-  transition: transform 2s;
+#b-commander:hover .bouton {
+  background: linear-gradient(#FFAAE8, #AE7CE9);
   box-shadow: 5px 5px 5px darkgrey;
 }
 

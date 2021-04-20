@@ -38,17 +38,21 @@
     transform: rotate(-360deg);
     transition: transform 1000ms ease-in-out;
 }
+
 .entrees{
     transition: 0.5s linear;
     &:hover{
         & > .check{
             transform: scaleX(1);
             width: 25%;
-            & .fas.fa-check-circle{
-                transform: rotate(0deg);
-                opacity: 1;
+                & .fas.fa-check-circle{
+                    transform: rotate(0deg);
+                    opacity: 1;
+                }
             }
-        }
+            & .prix-right{
+                animation: pright 800ms linear;
+            }
     }
 }
 
@@ -57,11 +61,14 @@
         & > .check{
             transform: scaleX(1);
             width: 25%;
-            & .fas.fa-check-circle{
-                transform: rotate(0deg);
-                opacity: 1;
+                & .fas.fa-check-circle{
+                    transform: rotate(0deg);
+                    opacity: 1;
+                }
+            }   
+            & .prix-right{
+                animation: pright 800ms linear;
             }
-        }
     }
 }
 .desserts{
@@ -69,26 +76,39 @@
         & > .check{
             transform: scaleX(1);
             width: 25%;
-            & .fas.fa-check-circle{
-                transform: rotate(0deg);
-                opacity: 1;
+                & .fas.fa-check-circle{
+                    transform: rotate(0deg);
+                    opacity: 1;
+                }
             }
-        }
+            & .prix-right{
+                animation: pright 800ms linear;
+            } 
     }
 }
 
+@keyframes pright {
+    0% {
+      transform: translateX(95px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
 
 //*Bouton*/
 :hover{
     &.explorer{
-        transition: transform 2s;
+        background: linear-gradient( #FFAAE8,#AE7CE9);
         box-shadow: 5px 5px 5px darkgrey;
     }
 }
-:hover{
-    & #b-commander{
-        transition: transform 2s;
-        box-shadow: 5px 5px 5px darkgrey;
+#b-commander{
+    &:hover{
+        & .bouton{
+            background: linear-gradient( #FFAAE8,#AE7CE9);
+            box-shadow: 5px 5px 5px darkgrey;
+        }
     }
 }
 

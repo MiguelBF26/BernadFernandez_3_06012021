@@ -1,7 +1,3 @@
-#menu{
-    border-bottom: 1px black solid;
-    box-shadow: 1px 0px 5px black;
-}
 #logo-principal{
     display: flex;
     justify-content: center;
@@ -49,10 +45,11 @@
     font-weight: bold;
     color: $colour-button;
     @include double-colour;
+    font-family: 'Roboto-thin';
     border-radius: 75px;
     box-shadow: 1px 1px 3px grey;
-    font-size:90%;
-    width: 70%;
+    font-size: 13px;
+    width: 55%;
     height: 40px;
 }
 .fonction{
@@ -63,17 +60,19 @@
     @include flex-box-column;
     align-items: center;
     margin-bottom: 50px;
-    .bouton{
+    & .bouton{
         @include flex-box-text;
         @include button-shadow;
         border-radius: 15px;
         margin: 0;
+        font-size: 14px;
+        font-family: 'Roboto-bold';
         width: 85%;
-        height: 30px;
+        height: 40px;
         padding: 10px;
         margin-bottom: 10px;
     }
-    span{
+    & span{
         position: absolute;
         left: 8px;
         text-align: center;
@@ -86,9 +85,13 @@
         width: 21px;
         height: 20px;
     }
-    .fas.fa-mobile-alt , .fas.fa-list-ul , .fas.fa-store{
+    & .fas.fa-mobile-alt , .fas.fa-list-ul {
         text-align: center;
         color:grey;
+    }
+    & .fas.fa-store{
+        text-align: center;
+        color: $colour-button-purple;
     }
 }
 
