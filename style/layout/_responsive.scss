@@ -19,12 +19,27 @@
         }
     }
     .nouveau{
-        position: absolute;
-        right: 50px;
+        &.--bis{
+            position: absolute;
+            right: 400px;
+        }
+    }
+
+    .like{
+        &.--bis{
+            position: absolute;
+            right: 415px;
+        }
+    }
+    footer{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px){
     #menu{
+        font-size: 15px;
         #logo-principal{
             & img{
                 width: 30%;
@@ -64,9 +79,29 @@
     .menu{
         width: 45%;
     }
+    .nouveau{
+        position: absolute;
+        right: 60px;
+        &.--bis{
+            position: absolute;
+            right: 530px;
+        }
+    }
+
+    .like{
+        &.--bis{
+            position: absolute;
+            right: 550px;
+        }
+    }
+    footer{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
     
 }
-@media screen and (max-width: 1024px){
+@media screen and (min-width: 1024px){
     body{
         margin: 0;
     }
@@ -75,5 +110,52 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+    }
+    #boutonFonction{
+        display: flex;
+        flex-direction: row;
+        & .bouton{
+            width: 45%;
+            height: 40px;
+            margin-left: 10px;
+            font-size: 12px;
+        }
+        & span{
+            position: static;
+        }
+        & .fas.fa-mobile-alt , .fas.fa-list-ul , .fas.fa-store{
+            font-size: 18px;
+        }
+    }
+    #restaurant{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .menu{
+        font-size: 20px;
+        width: 45%;
+        margin: 15px 15px;
+    }
+    .nouveau{
+        width: 13% ;
+        position: absolute;
+        right: 70px;
+        &.--bis{
+            position: absolute;
+            right: 52%;
+        }
+    }
+
+    .like{
+        &.--bis{
+            position: absolute;
+            right: 55%;
+        }
+    }
+    footer{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 }

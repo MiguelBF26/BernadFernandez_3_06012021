@@ -372,7 +372,6 @@ h1, h3 {
   border-bottom-right-radius: 20px;
   width: 0%;
   height: 80px;
-  transform: 1s scaleX(0);
 }
 
 .fas.fa-check-circle {
@@ -559,23 +558,23 @@ footer li {
     opacity: 0;
   }
 }
-.entrees:nth-child(1), .plats:nth-child(1), .desserts:nth-child(1) {
+.entrees, .plats, .desserts {
   transform: translateY(50px, 0);
+}
+
+.entrees:nth-child(1), .plats:nth-child(1), .desserts:nth-child(1) {
   animation: opace 1s linear;
 }
 
 .entrees:nth-child(2), .plats:nth-child(2), .desserts:nth-child(2) {
-  transform: translateY(50px, 0);
   animation: opace 1.4s linear;
 }
 
 .entrees:nth-child(3), .plats:nth-child(3), .desserts:nth-child(3) {
-  transform: translateY(50px, 0);
   animation: opace 1.8s linear;
 }
 
 .entrees:nth-child(4), .plats:nth-child(4), .desserts:nth-child(4) {
-  transform: translateY(50px, 0);
   animation: opace 2.2s linear;
 }
 
@@ -608,12 +607,26 @@ footer li {
     font-size: 20px;
   }
 
-  .nouveau {
+  .nouveau.--bis {
     position: absolute;
-    right: 50px;
+    right: 400px;
+  }
+
+  .like.--bis {
+    position: absolute;
+    right: 415px;
+  }
+
+  footer {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  #menu {
+    font-size: 15px;
+  }
   #menu #logo-principal img {
     width: 30%;
   }
@@ -653,8 +666,28 @@ footer li {
   .menu {
     width: 45%;
   }
+
+  .nouveau {
+    position: absolute;
+    right: 60px;
+  }
+  .nouveau.--bis {
+    position: absolute;
+    right: 530px;
+  }
+
+  .like.--bis {
+    position: absolute;
+    right: 550px;
+  }
+
+  footer {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
   body {
     margin: 0;
   }
@@ -664,6 +697,56 @@ footer li {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+  }
+
+  #boutonFonction {
+    display: flex;
+    flex-direction: row;
+  }
+  #boutonFonction .bouton {
+    width: 45%;
+    height: 40px;
+    margin-left: 10px;
+    font-size: 12px;
+  }
+  #boutonFonction span {
+    position: static;
+  }
+  #boutonFonction .fas.fa-mobile-alt, #boutonFonction .fas.fa-list-ul, #boutonFonction .fas.fa-store {
+    font-size: 18px;
+  }
+
+  #restaurant {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .menu {
+    font-size: 20px;
+    width: 45%;
+    margin: 15px 15px;
+  }
+
+  .nouveau {
+    width: 13%;
+    position: absolute;
+    right: 70px;
+  }
+  .nouveau.--bis {
+    position: absolute;
+    right: 52%;
+  }
+
+  .like.--bis {
+    position: absolute;
+    right: 55%;
+  }
+
+  footer {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
 

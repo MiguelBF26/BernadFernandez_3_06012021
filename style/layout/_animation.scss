@@ -167,21 +167,19 @@
     }
 }
 //**/
-
-.entrees:nth-child(1) ,  .plats:nth-child(1) , .desserts:nth-child(1){
+.entrees , .plats , .desserts{
     transform: translateY(50px,0);
+}
+.entrees:nth-child(1) ,  .plats:nth-child(1) , .desserts:nth-child(1){
     animation: opace 1s linear;
 }
 .entrees:nth-child(2) , .plats:nth-child(2) , .desserts:nth-child(2){
-    transform: translateY(50px,0);
     animation: opace 1.4s linear;
 }
 .entrees:nth-child(3) ,.plats:nth-child(3) , .desserts:nth-child(3){
-    transform: translateY(50px,0);
     animation: opace 1.8s linear;
 }
 .entrees:nth-child(4) , .plats:nth-child(4) , .desserts:nth-child(4){
-    transform: translateY(50px,0);
     animation: opace 2.2s linear;
 }
 
