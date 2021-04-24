@@ -43,6 +43,7 @@
     transition: 0.5s linear;
     &:hover{
         & > .check{
+            animation: check 1000ms linear;
             transform: scaleX(1);
             width: 25%;
                 & .fas.fa-check-circle{
@@ -94,11 +95,14 @@
     100% {
       transform: translateX(0px);
     }
-  }
+}
+  
 
 //*Bouton*/
 :hover{
     &.explorer{
+        transition: 1000ms;
+        transform: scale(1.05);
         background: linear-gradient( #FFAAE8,#AE7CE9);
         box-shadow: 5px 5px 5px darkgrey;
     }
@@ -106,11 +110,14 @@
 #b-commander{
     &:hover{
         & .bouton{
+            transition: 1000ms;
+            transform: scale(1.05);
             background: linear-gradient( #FFAAE8,#AE7CE9);
             box-shadow: 5px 5px 5px darkgrey;
         }
     }
 }
+
 
 
 //*écran de chargement*/

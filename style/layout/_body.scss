@@ -92,16 +92,24 @@
     padding-top: 20px;
     margin-top: -50px;
     margin-bottom: 50px;
+    & .nom-du-menu{  
+        font-family: "Shrikhand";
+        font-size: 30px;
+        color: black; 
+        margin-right: 130px;
+        &.--1{
+            margin-right: 55px; 
+        }
+    }
+    & .like{
+        font-size: 20px;
+        &   .far.fa-heart , .fas.fa-heart{
+            margin-right: -50px;
+            margin-bottom: -10px;
+        }
+    }
 }
-.nom-du-menu{  
-    font-family: "Shrikhand";
-    font-size: 30px;
-    color: black; 
-    margin-right: 90px; 
-}
-.far.fa-heart{
-    font-size: 20px;
-} 
+ 
 
 #entrees , #plats , #desserts{
     @include flex-box-column;
@@ -152,7 +160,7 @@
     margin: 30px 30px;
     .bouton{    
         @include flex-box-button;
-        font-weight: bold;
+        font-family: 'Roboto-thin';
         color: $colour-button;
         @include double-colour;
         box-shadow: 1px 1px 3px grey;

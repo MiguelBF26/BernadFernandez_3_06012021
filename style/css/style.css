@@ -153,8 +153,9 @@ h1, h3 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   padding-top: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 #menu-bis .retour {
   margin-left: 15px;
@@ -162,7 +163,8 @@ h1, h3 {
   color: gray;
 }
 #menu-bis #logo-principal {
-  margin-right: 50px;
+  width: 100%;
+  margin-right: 10%;
 }
 
 #resto {
@@ -266,16 +268,21 @@ h1, h3 {
   margin-top: -50px;
   margin-bottom: 50px;
 }
-
-.nom-du-menu {
+.title .nom-du-menu {
   font-family: "Shrikhand";
   font-size: 30px;
   color: black;
-  margin-right: 90px;
+  margin-right: 130px;
 }
-
-.far.fa-heart {
+.title .nom-du-menu.--1 {
+  margin-right: 55px;
+}
+.title .like {
   font-size: 20px;
+}
+.title .like .far.fa-heart, .title .like .fas.fa-heart {
+  margin-right: -50px;
+  margin-bottom: -10px;
 }
 
 #entrees, #plats, #desserts {
@@ -343,7 +350,7 @@ h1, h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: bold;
+  font-family: "Roboto-thin";
   color: #ffff;
   background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 1px 1px 3px grey;
@@ -451,6 +458,7 @@ footer li {
   transition: 0.5s linear;
 }
 .entrees:hover > .check {
+  animation: check 1000ms linear;
   transform: scaleX(1);
   width: 25%;
 }
@@ -495,11 +503,15 @@ footer li {
   }
 }
 :hover.explorer {
+  transition: 1000ms;
+  transform: scale(1.05);
   background: linear-gradient(#FFAAE8, #AE7CE9);
   box-shadow: 5px 5px 5px darkgrey;
 }
 
 #b-commander:hover .bouton {
+  transition: 1000ms;
+  transform: scale(1.05);
   background: linear-gradient(#FFAAE8, #AE7CE9);
   box-shadow: 5px 5px 5px darkgrey;
 }

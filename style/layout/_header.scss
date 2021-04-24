@@ -103,14 +103,16 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     .retour{
         margin-left: 15px;
         font-size: 15px;
         color: gray;
     }
     #logo-principal{
-        margin-right: 50px;
+        width: 100%;
+        margin-right: 10%;
     }
 }
