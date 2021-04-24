@@ -175,7 +175,7 @@
 }
 //**/
 .entrees , .plats , .desserts{
-    transform: translateY(50px,0);
+    transform: translateY(50px,0px);
 }
 .entrees:nth-child(1) ,  .plats:nth-child(1) , .desserts:nth-child(1){
     animation: opace 1s linear;

@@ -274,15 +274,13 @@ h1, h3 {
   color: black;
   margin-right: 130px;
 }
-.title .nom-du-menu.--1 {
-  margin-right: 55px;
+.title .nom-du-menu--1 {
+  margin-right: 54px;
 }
 .title .like {
   font-size: 20px;
-}
-.title .like .far.fa-heart, .title .like .fas.fa-heart {
-  margin-right: -50px;
-  margin-bottom: -10px;
+  margin-bottom: 15px;
+  margin-right: -5px;
 }
 
 #entrees, #plats, #desserts {
@@ -571,7 +569,7 @@ footer li {
   }
 }
 .entrees, .plats, .desserts {
-  transform: translateY(50px, 0);
+  transform: translateY(50px, 0px);
 }
 
 .entrees:nth-child(1), .plats:nth-child(1), .desserts:nth-child(1) {
@@ -619,14 +617,13 @@ footer li {
     font-size: 20px;
   }
 
-  .nouveau.--bis {
+  #restaurant .nouveau--bis {
     position: absolute;
     right: 400px;
   }
-
-  .like.--bis {
+  #restaurant .like--bis {
     position: absolute;
-    right: 415px;
+    right: 418px;
   }
 
   footer {
@@ -674,23 +671,21 @@ footer li {
     flex-direction: row;
     flex-wrap: wrap;
   }
-
-  .menu {
-    width: 45%;
-  }
-
-  .nouveau {
+  #restaurant .nouveau {
     position: absolute;
     right: 60px;
   }
-  .nouveau.--bis {
+  #restaurant .nouveau--bis {
     position: absolute;
     right: 530px;
   }
-
-  .like.--bis {
+  #restaurant .like--bis {
     position: absolute;
     right: 550px;
+  }
+
+  .menu {
+    width: 45%;
   }
 
   footer {
@@ -733,26 +728,24 @@ footer li {
     flex-direction: row;
     flex-wrap: wrap;
   }
+  #restaurant .nouveau {
+    width: 13%;
+    position: absolute;
+    right: 70px;
+  }
+  #restaurant .nouveau--bis {
+    position: absolute;
+    right: 52%;
+  }
+  #restaurant .like--bis {
+    position: absolute;
+    right: 55%;
+  }
 
   .menu {
     font-size: 20px;
     width: 45%;
     margin: 15px 15px;
-  }
-
-  .nouveau {
-    width: 13%;
-    position: absolute;
-    right: 70px;
-  }
-  .nouveau.--bis {
-    position: absolute;
-    right: 52%;
-  }
-
-  .like.--bis {
-    position: absolute;
-    right: 55%;
   }
 
   footer {

@@ -18,19 +18,21 @@
             font-size: 20px;
         }
     }
-    .nouveau{
-        &.--bis{
-            position: absolute;
-            right: 400px;
+    #restaurant{
+        .nouveau{
+            &--bis{
+                position: absolute;
+                right: 400px;
+            }
+        }
+        .like{
+            &--bis{
+                position: absolute;
+                right: 418px;
+            }
         }
     }
-
-    .like{
-        &.--bis{
-            position: absolute;
-            right: 415px;
-        }
-    }
+    
     footer{
         justify-content: center;
         align-items: center;
@@ -75,25 +77,25 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        & .nouveau{
+            position: absolute;
+            right: 60px;
+            &--bis{
+                position: absolute;
+                right: 530px;
+            }
+        }
+        .like{
+            &--bis{
+                position: absolute;
+                right: 550px;
+            }
+        }
     }
     .menu{
         width: 45%;
     }
-    .nouveau{
-        position: absolute;
-        right: 60px;
-        &.--bis{
-            position: absolute;
-            right: 530px;
-        }
-    }
-
-    .like{
-        &.--bis{
-            position: absolute;
-            right: 550px;
-        }
-    }
+    
     footer{
         justify-content: center;
         align-items: center;
@@ -131,28 +133,28 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        .nouveau{
+            width: 13% ;
+            position: absolute;
+            right: 70px;
+            &--bis{
+                position: absolute;
+                right: 52%;
+            }
+        }
+        .like{
+            &--bis{
+                position: absolute;
+                right: 55%;
+            }
+        }
     }
     .menu{
         font-size: 20px;
         width: 45%;
         margin: 15px 15px;
     }
-    .nouveau{
-        width: 13% ;
-        position: absolute;
-        right: 70px;
-        &.--bis{
-            position: absolute;
-            right: 52%;
-        }
-    }
-
-    .like{
-        &.--bis{
-            position: absolute;
-            right: 55%;
-        }
-    }
+       
     footer{
         justify-content: center;
         align-items: center;
