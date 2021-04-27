@@ -342,7 +342,7 @@ h1, h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px 30px;
+  margin: 50px 30px;
 }
 #b-commander .bouton {
   display: flex;
@@ -353,8 +353,8 @@ h1, h3 {
   background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 1px 1px 3px grey;
   border-radius: 75px;
-  font-size: 90%;
-  width: 50%;
+  font-size: 95%;
+  width: 60%;
   height: 45px;
 }
 
@@ -694,16 +694,31 @@ footer li {
     text-align: center;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1500px) {
   body {
     margin: 0;
   }
 
-  .logo-principal {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  #menu {
+    font-size: 15px;
+  }
+  #menu #logo-principal img {
+    width: 25%;
+  }
+
+  #menu-bis .retour {
+    font-size: 25px;
+  }
+  #menu-bis #logo-principal img {
+    width: 28%;
+  }
+
+  .title .nom-du-menu {
+    margin-top: 45px;
+    font-size: 45px;
+  }
+  .title .like .far.fa-heart, .title .like .fas.fa-heart {
+    font-size: 30px;
   }
 
   #boutonFonction {
@@ -721,6 +736,91 @@ footer li {
   }
   #boutonFonction .fas.fa-mobile-alt, #boutonFonction .fas.fa-list-ul, #boutonFonction .fas.fa-store {
     font-size: 18px;
+  }
+
+  #auMenu h2 {
+    width: 3%;
+  }
+
+  #restaurant {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #restaurant .nouveau {
+    width: 13%;
+    position: absolute;
+    right: 70px;
+  }
+  #restaurant .nouveau--bis {
+    position: absolute;
+    right: 52%;
+  }
+  #restaurant .like--bis {
+    position: absolute;
+    right: 55%;
+  }
+
+  .menu {
+    font-size: 20px;
+    width: 45%;
+    margin: 15px 15px;
+  }
+
+  footer {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 2560px) {
+  body {
+    margin: 0;
+  }
+
+  #menu {
+    font-size: 15px;
+  }
+  #menu #logo-principal img {
+    margin-top: 45px;
+    width: 15%;
+  }
+
+  #menu-bis .retour {
+    font-size: 25px;
+  }
+  #menu-bis #logo-principal img {
+    margin-top: 50px;
+    width: 15%;
+  }
+
+  #boutonFonction {
+    display: flex;
+    flex-direction: row;
+  }
+  #boutonFonction .bouton {
+    width: 45%;
+    height: 40px;
+    margin-left: 10px;
+    font-size: 12px;
+  }
+  #boutonFonction span {
+    position: static;
+  }
+  #boutonFonction .fas.fa-mobile-alt, #boutonFonction .fas.fa-list-ul, #boutonFonction .fas.fa-store {
+    font-size: 18px;
+  }
+
+  .title .nom-du-menu {
+    margin-top: 45px;
+    font-size: 50px;
+  }
+  .title .like .far.fa-heart, .title .like .fas.fa-heart {
+    font-size: 40px;
+  }
+
+  #auMenu h2 {
+    width: 2%;
   }
 
   #restaurant {

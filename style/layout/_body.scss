@@ -155,7 +155,7 @@
 
 #b-commander{
     @include flex-box-button;
-    margin: 30px 30px;
+    margin:  50px 30px;
     .bouton{    
         @include flex-box-button;
         font-family: 'Roboto-thin';
@@ -163,8 +163,8 @@
         @include double-colour;
         box-shadow: 1px 1px 3px grey;
         border-radius: 75px;
-        font-size:90%;
-        width: 50%;
+        font-size: 95%;
+        width: 60%;
         height: 45px;
     }
 }
