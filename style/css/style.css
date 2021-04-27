@@ -617,13 +617,13 @@ footer li {
     font-size: 20px;
   }
 
-  #restaurant .nouveau--bis {
+  #restaurant .nouveau.--bis {
     position: absolute;
-    right: 400px;
+    right: 50px;
   }
-  #restaurant .like--bis {
+  #restaurant .like.--bis {
     position: absolute;
-    right: 418px;
+    right: 50px;
   }
 
   footer {
@@ -675,13 +675,16 @@ footer li {
     position: absolute;
     right: 60px;
   }
-  #restaurant .nouveau--bis {
+  #restaurant .nouveau.--bis {
     position: absolute;
-    right: 530px;
+    right: 55%;
   }
-  #restaurant .like--bis {
+  #restaurant .like {
+    margin-right: -10px;
+  }
+  #restaurant .like.--bis {
     position: absolute;
-    right: 550px;
+    right: 55%;
   }
 
   .menu {
@@ -752,11 +755,11 @@ footer li {
     position: absolute;
     right: 70px;
   }
-  #restaurant .nouveau--bis {
+  #restaurant .nouveau.--bis {
     position: absolute;
-    right: 52%;
+    right: 55%;
   }
-  #restaurant .like--bis {
+  #restaurant .like.--bis {
     position: absolute;
     right: 55%;
   }
@@ -827,17 +830,18 @@ footer li {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    height: 80%;
   }
   #restaurant .nouveau {
-    width: 13%;
+    width: 10%;
     position: absolute;
-    right: 70px;
+    right: 6%;
   }
-  #restaurant .nouveau--bis {
+  #restaurant .nouveau.--bis {
     position: absolute;
-    right: 52%;
+    right: 53%;
   }
-  #restaurant .like--bis {
+  #restaurant .like.--bis {
     position: absolute;
     right: 55%;
   }
